@@ -6,16 +6,22 @@
     <title>Todo-List</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Todo List</h1>
-    <ul id="list">
+<body class="dark-mode"> <!-- Default mode can be 'dark-mode' or 'light-mode' -->
 
-    </ul>
+    <h1>Todo List</h1>
+
+    <!-- Toggle Mode Button -->
+    <button id="toggleModeButton" style="margin-bottom: 20px;">Switch to Light Mode</button>
+
+    <ul id="list"></ul>
+
     <div>
-        <input type = 'text' id="todoInput" placeholder="Add a new todo"><p></p>
+        <input type="text" id="todoInput" placeholder="Add a new todo">
+        <p></p>
         <button id="addButton">Add Todo</button>
     </div>
+
     <script src="script.js"></script>
 
 </body>
-</html> 
+</html>

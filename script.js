@@ -21,3 +21,17 @@ let array = [];
                 }
             }
         }
+        const toggleBtn = document.getElementById("toggleModeButton");
+        const body = document.body;
+
+        toggleBtn.addEventListener("click", () => {
+            if (body.classList.contains("dark-mode")) {
+                body.classList.remove("dark-mode");
+                body.classList.add("light-mode");
+                toggleBtn.textContent = "Switch to Dark Mode";
+            } else {
+                body.classList.remove("light-mode");
+                body.classList.add("dark-mode");
+                toggleBtn.textContent = "Switch to Light Mode";
+            }
+        });
